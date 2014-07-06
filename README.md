@@ -46,16 +46,16 @@ And look for the name that Virtual Box has given this machine, it will likely be
 Now run
 
 ```sh
-vagrant package --base vagrantbox-ubuntu_dspace_1387309768 --output precise64.box
+vagrant package --base vagrantbox-ubuntu_dspace_1387309768 --output precise32.box
 ```
 
 Wait for that to complete, when you have a new precise64.box all packaged up, run this:
 
 ```sh
-vagrant box add precise64 precise64.box
+vagrant box add precise32 precise32.box
 ```
 
-And now, you will have your own personally-tweaked base box to use with Vagrant-DSpace, or for any Vagrant-based project that refers to a base box named "precise64".
+And now, you will have your own personally-tweaked base box to use with Vagrant-DSpace, or for any Vagrant-based project that refers to a base box named "precise32".
 
 <h2>Requirements</h2>
  * [Vagrant](http://www.vagrantup.com/)
